@@ -65,12 +65,13 @@ const UI = (() => {
            <input class="input input--sm" type="date" id="to" value="${Store.toISODate(range.to)}" style="width:auto">
            <button class="icon-btn" data-shift="1" title="Сдвинуть вперёд">›</button>
            <span class="pill">${range.days} дн</span>
+           ${Store.endOfDay(range.to) < Date.now() - 86400e3 ? '<button class="btn btn--ghost btn--sm" data-shift="today" title="Тот же отрезок, но до сегодня">Сегодня</button>' : ''}
          </div>`
       : `<div class="period-nav">
            <button class="icon-btn" data-shift="-1" title="Предыдущий период">‹</button>
            <span class="now">${esc(range.label)}</span>
            <button class="icon-btn" data-shift="1" title="Следующий период" ${p.offset >= 0 ? 'disabled' : ''}>›</button>
-           ${p.offset !== -1 ? '<button class="btn btn--ghost btn--sm" data-shift="last">Прошлый</button>' : ''}
+           ${p.offset !== 0 ? '<button class="btn btn--ghost btn--sm" data-shift="today" title="Вернуться к текущему периоду">Сегодня</button>' : ''}
          </div>`;
 
     const rankOpts = [30, 50, 70].map(v =>
@@ -444,6 +445,11 @@ const UI = (() => {
     parts.push(`с датой исправления: <b>${res.records.filter(r => r.fixed).length}</b>`);
     parts.push(`с датой начала работы: <b>${res.records.filter(r => r.started).length}</b>`);
     parts.push(`с рангом: <b>${res.records.filter(r => r.rank !== '').length}</b>`);
+    const bad = res.records.filter(r => {
+      const c = Store.parseDateTime(r.created);
+      return c && [r.fixed, r.resolved, r.started].some(v => { const t = Store.parseDateTime(v); return t && t < c; });
+    }).length;
+    if (bad) parts.push(`<span style="color:#fbbf24" title="Такие инциденты считаются разобранными, но в метрики времени не попадают">дата раньше создания: ${bad}</span>`);
     if (res.missing.length) parts.push(`<span style="color:#f87171">не найдено: ${res.missing.map(f => f.label).join(', ')}</span>`);
     return parts.map(p => `<span>${p}</span>`).join('');
   }

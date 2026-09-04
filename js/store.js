@@ -437,9 +437,13 @@ const Store = (() => {
     inc.fixedMs = fixed;
     inc.resolvedMs = resolved;
     inc.unblockedMs = unblocked;
-    inc.timeToStart = created !== null && started !== null ? started - created : null;
-    inc.timeToFix = created !== null && unblocked !== null ? unblocked - created : null;
-    inc.timeToClose = created !== null && resolved !== null ? resolved - created : null;
+    // Веха раньше создания — ошибка в данных: инцидент остаётся разобранным/закрытым
+    // (это факт статуса), но в метрики времени отрицательный интервал не попадает.
+    const span = (from, to) => (from !== null && to !== null && to >= from ? to - from : null);
+    inc.datesInconsistent = created !== null && [started, fixed, resolved].some(t => t !== null && t < created);
+    inc.timeToStart = span(created, started);
+    inc.timeToFix = span(created, unblocked);
+    inc.timeToClose = span(created, resolved);
     inc.isOpen = unblocked === null;
     inc.closedNoDate = inc.statusCategory === 'done' && inc.resolvedInferred;
     return inc;

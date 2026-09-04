@@ -124,6 +124,19 @@
     pushNav();
   }
 
+  /** «Сегодня»: текущий период того же вида; для произвольного — тот же отрезок, но до сегодня. */
+  function goToday() {
+    const p = Store.settings().period;
+    if (p.mode === 'custom') {
+      const len = Store.periodRange(p).days;
+      const to = new Date();
+      const from = Store.addDays(to, -(len - 1));
+      setPeriod({ from: Store.toISODate(from), to: Store.toISODate(to) });
+      return;
+    }
+    setPeriod({ offset: 0 });
+  }
+
   function shiftPeriod(by) {
     const p = Store.settings().period;
     if (p.mode === 'custom') {
@@ -389,7 +402,7 @@
 
     const shift = closest('[data-shift]');
     if (shift) {
-      if (shift.dataset.shift === 'last') setPeriod({ offset: -1 });
+      if (shift.dataset.shift === 'today') goToday();
       else shiftPeriod(Number(shift.dataset.shift));
       return;
     }

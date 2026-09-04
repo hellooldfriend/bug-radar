@@ -5,10 +5,10 @@ const { loadApp } = require('./helpers/load');
 
 const CSV = [
   'Код;Метки;Тема;Ранг;Создали;Дата завершения;Статус;Время восстановления;Исполнитель',
-  'INC-101;billing prod;Оплата не проходит;92;2026-08-24 09:12;2026.08.26 18:02;Готово;2026-08-25 11:40;Марат',
+  'INC-101;billing prod;Оплата не проходит;92;2026-08-24 09:12;26.08.2026 18:02;Готово;2026-08-25 11:40;Марат',
   'INC-102;;Не грузится отчёт;78;2026-08-25 10:00;;Проектирование;;Аня',
   'INC-106;;Кнопка неактивна;70;2026-08-27 15:45;;Готово к проектированию;;Аня',
-  'INC-107;prod;Экспорт падает;88;2026-08-28 09:00;2026.08.29 15:30;Готово;2 ч 15 мин;Тимур',
+  'INC-107;prod;Экспорт падает;88;2026-08-28 09:00;29.08.2026 15:30;Готово;2 ч 15 мин;Тимур',
   'INC-108;;Без ранга;;2026-08-28 11:00;;Ожидает разработки;;',
 ].join('\n');
 
@@ -34,10 +34,19 @@ test('колонки раскладываются сами: Код, Тема, С
   assert.equal(names[res.map.rank], 'Ранг');
 });
 
-test('дата вида YYYY.MM.DD HH:MM читается как местное время', () => {
+test('«Создали» 2026-08-13 11:20 и «Дата завершения» 11.08.2026 13:37 — оба как местное время', () => {
+  const { app } = imported();
+  const parts = iso => { const d = new Date(iso); return [d.getFullYear(), d.getMonth() + 1, d.getDate(), d.getHours(), d.getMinutes()]; };
+  assert.deepEqual(parts(app.Store.parseDateTime('2026-08-13 11:20')), [2026, 8, 13, 11, 20]);
+  assert.deepEqual(parts(app.Store.parseDateTime('11.08.2026 13:37')), [2026, 8, 11, 13, 37], 'день идёт первым, а не месяц');
+  assert.deepEqual(parts(app.Store.parseDateTime('2026.08.26 18:02')), [2026, 8, 26, 18, 2], 'год впереди с точками — тоже понимаем');
+  assert.deepEqual(parts(app.Store.parseDateTime('01.12.2026 09:05')), [2026, 12, 1, 9, 5]);
+});
+
+test('дата завершения из выгрузки попадает в закрытие с тем же временем', () => {
   const { by } = imported();
   const d = new Date(by('INC-101').resolvedAt);
-  assert.deepEqual([d.getFullYear(), d.getMonth(), d.getDate(), d.getHours(), d.getMinutes()], [2026, 7, 26, 18, 2]);
+  assert.deepEqual([d.getDate(), d.getHours(), d.getMinutes()], [26, 18, 2]);
 });
 
 test('«Время восстановления» — дата: она и есть дата исправления', () => {
@@ -80,4 +89,23 @@ test('закрыто без даты закрытия: берётся дата �
   const inc = app.Store.incidents()[0];
   assert.equal(inc.resolvedInferred, true);
   assert.equal(new Date(inc.resolvedAt).getDate(), 25);
+});
+
+test('дата завершения раньше создания: закрыто, но в метрики времени не попадает', () => {
+  const app = loadApp();
+  app.Store.mergeIncidents([
+    { key: 'INC-109', summary: 'Пример из письма', created: '2026-08-13 11:20', resolved: '11.08.2026 13:37', status: 'Готово', rank: 55 },
+    { key: 'INC-110', summary: 'Нормальный', created: '2026-08-13 11:20', resolved: '14.08.2026 13:37', status: 'Готово', rank: 55 },
+  ]);
+  const bad = app.Store.incidents().find(i => i.key === 'INC-109');
+  assert.equal(bad.isOpen, false, 'по статусу и дате это закрытый инцидент');
+  assert.equal(bad.datesInconsistent, true);
+  assert.equal(bad.timeToClose, null, 'отрицательный интервал не считается');
+  assert.equal(bad.timeToFix, null);
+
+  const range = app.Store.periodRange({ mode: 'week', offset: 0 }, new Date(2026, 7, 12));
+  const m = app.Metrics.forRange(app.Store.incidents(), app.Store.settings(), range, new Date(2026, 7, 16).getTime());
+  assert.equal(m.closed, 2, 'оба закрыты в периоде');
+  assert.equal(m.ttc.n, 1, 'но время закрытия посчитано только по одному');
+  assert.ok(m.ttc.p50 > 0);
 });
