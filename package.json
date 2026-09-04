@@ -1,0 +1,11 @@
+{
+  "name": "bug-radar",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Дашборд еженедельного разбора клиентских инцидентов из Jira",
+  "scripts": {
+    "test": "node --test",
+    "test:watch": "node --test --watch",
+    "serve": "python3 -m http.server 4187"
+  }
+}

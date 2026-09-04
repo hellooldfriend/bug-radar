@@ -1,0 +1,180 @@
+Issue key,Summary,Issue Type,Status,Assignee,Created,Resolved,Custom field (Дата взятия в работу),Custom field (Дата исправления),Custom field (Ранг),Component/s,Updated
+SUP-1001,Оплата не проходит у трёх клиентов,Defect,To Do,Игорь,25/Jun/26 10:40 PM,,,,85,Payments,25/Jun/26 10:40 PM
+SUP-1002,Пропали скидки в акциях,Defect,In Progress,Марат,25/Jun/26 08:00 PM,,26/Jun/26 05:39 PM,,60,Payments,26/Jun/26 05:39 PM
+SUP-1003,Фильтр по датам сбрасывается,Defect,Testing,Игорь,26/Jun/26 06:00 AM,,26/Jun/26 09:51 PM,27/Jun/26 12:36 AM,78,Reports,27/Jun/26 12:36 AM
+SUP-1004,Синхронизация с маркетплейсом встала,Defect,In Progress,Аня,27/Jun/26 04:12 AM,,28/Jun/26 03:03 PM,03/Jul/26 05:17 PM,15,Mobile,03/Jul/26 05:17 PM
+SUP-1005,Импорт номенклатуры зависает на 5000 строк,Defect,Done,Марат,27/Jun/26 06:40 AM,30/Jun/26 12:48 AM,27/Jun/26 08:55 AM,28/Jun/26 12:47 AM,95,Core,30/Jun/26 12:48 AM
+SUP-1006,Не работает поиск по артикулу,Defect,In Progress,Аня,27/Jun/26 12:40 AM,,29/Jun/26 04:57 AM,,55,Sync,29/Jun/26 04:57 AM
+SUP-1007,Долгая загрузка дашборда,Defect,Done,Игорь,28/Jun/26 03:40 AM,04/Jul/26 04:49 PM,03/Jul/26 02:29 PM,04/Jul/26 12:11 AM,,Mobile,04/Jul/26 04:49 PM
+SUP-1008,Не сходится остаток на складе,Defect,In Review,,28/Jun/26 05:40 AM,,01/Jul/26 06:57 AM,15/Jul/26 06:19 PM,15,Core,15/Jul/26 06:19 PM
+SUP-1009,Не сходится остаток на складе,Defect,Done,Аня,29/Jun/26 12:40 AM,06/Jul/26 02:41 AM,29/Jun/26 08:20 AM,05/Jul/26 04:50 PM,85,Payments,06/Jul/26 02:41 AM
+SUP-1010,Ошибка 500 при открытии карточки клиента,Defect,Done,,29/Jun/26 02:40 AM,05/Jul/26 01:23 PM,29/Jun/26 06:01 AM,02/Jul/26 05:35 AM,65,Mobile,05/Jul/26 01:23 PM
+SUP-1011,Ошибка 500 при открытии карточки клиента,Defect,Done,Тимур,29/Jun/26 01:40 AM,01/Jul/26 07:03 PM,29/Jun/26 08:12 AM,30/Jun/26 07:28 AM,35,Reports,01/Jul/26 07:03 PM
+SUP-1012,Оплата не проходит у трёх клиентов,Defect,Done,Даша,28/Jun/26 10:40 PM,02/Jul/26 06:31 PM,29/Jun/26 06:57 AM,01/Jul/26 04:04 AM,72,Core,02/Jul/26 06:31 PM
+SUP-1013,Кассовый чек печатается без НДС,Defect,Open,Даша,30/Jun/26 02:40 AM,,,,60,Payments,30/Jun/26 02:40 AM
+SUP-1014,Долгая загрузка дашборда,Defect,In Progress,Игорь,29/Jun/26 09:25 PM,,29/Jun/26 10:23 PM,,78,Reports,29/Jun/26 10:23 PM
+SUP-1015,Отчёт по марже расходится с 1С,Defect,Done,Даша,29/Jun/26 09:12 PM,02/Jul/26 04:56 PM,30/Jun/26 05:41 AM,02/Jul/26 12:01 PM,78,Mobile,02/Jul/26 04:56 PM
+SUP-1016,Кассовый чек печатается без НДС,Defect,Done,Игорь,30/Jun/26 03:25 AM,08/Jul/26 12:53 PM,30/Jun/26 09:38 AM,07/Jul/26 07:50 AM,15,Sync,08/Jul/26 12:53 PM
+SUP-1017,Не приходит письмо о смене пароля,Defect,Testing,Тимур,01/Jul/26 04:00 AM,,01/Jul/26 08:30 AM,04/Jul/26 05:37 AM,95,Payments,04/Jul/26 05:37 AM
+SUP-1018,Импорт номенклатуры зависает на 5000 строк,Defect,Done,Аня,01/Jul/26 04:25 AM,07/Jul/26 11:17 PM,01/Jul/26 08:57 AM,05/Jul/26 03:04 AM,85,Core,07/Jul/26 11:17 PM
+SUP-1019,Долгая загрузка дашборда,Defect,In Review,Тимур,02/Jul/26 01:00 AM,,04/Jul/26 03:26 PM,07/Jul/26 08:08 PM,,Reports,07/Jul/26 08:08 PM
+SUP-1020,Долгая загрузка дашборда,Defect,Done,,01/Jul/26 11:00 PM,05/Jul/26 01:55 AM,03/Jul/26 12:24 AM,05/Jul/26 01:51 AM,35,Reports,05/Jul/26 01:55 AM
+SUP-1021,Мобильное приложение вылетает на списке заказов,Defect,In Progress,Марат,02/Jul/26 06:00 AM,,04/Jul/26 06:59 PM,,60,Mobile,04/Jul/26 06:59 PM
+SUP-1022,Фильтр по датам сбрасывается,Defect,In Progress,Игорь,02/Jul/26 03:40 AM,,02/Jul/26 09:16 PM,,92,Mobile,02/Jul/26 09:16 PM
+SUP-1023,Дубли уведомлений после переезда очереди,Defect,In Progress,Игорь,03/Jul/26 05:40 AM,,05/Jul/26 07:33 AM,,85,Payments,05/Jul/26 07:33 AM
+SUP-1024,Не работает поиск по артикулу,Defect,In Review,Аня,03/Jul/26 02:12 AM,,03/Jul/26 03:20 AM,04/Jul/26 08:02 AM,35,Reports,04/Jul/26 08:02 AM
+SUP-1025,Фильтр по датам сбрасывается,Defect,Done,Аня,04/Jul/26 03:40 AM,06/Jul/26 04:35 AM,04/Jul/26 06:11 AM,04/Jul/26 03:04 PM,72,Payments,06/Jul/26 04:35 AM
+SUP-1026,Оплата не проходит у трёх клиентов,Defect,Done,Аня,04/Jul/26 03:00 AM,10/Jul/26 07:58 AM,04/Jul/26 04:08 AM,06/Jul/26 06:04 PM,72,Payments,10/Jul/26 07:58 AM
+SUP-1027,Слетают настройки прав после релиза,Defect,Open,Тимур,04/Jul/26 12:00 AM,,,,95,Core,04/Jul/26 12:00 AM
+SUP-1028,Ошибка 500 при открытии карточки клиента,Defect,Done,Игорь,05/Jul/26 12:40 AM,11/Jul/26 07:30 PM,05/Jul/26 02:23 PM,07/Jul/26 01:29 AM,72,Payments,11/Jul/26 07:30 PM
+SUP-1029,Не работает поиск по артикулу,Defect,Open,Марат,05/Jul/26 03:12 AM,,,,60,Payments,05/Jul/26 03:12 AM
+SUP-1030,Слетают настройки прав после релиза,Defect,In Progress,Аня,05/Jul/26 09:12 PM,,06/Jul/26 03:23 AM,,92,Reports,06/Jul/26 03:23 AM
+SUP-1031,Кассовый чек печатается без НДС,Defect,Done,Тимур,06/Jul/26 02:40 AM,23/Jul/26 09:18 AM,13/Jul/26 06:21 PM,22/Jul/26 04:44 PM,25,Sync,23/Jul/26 09:18 AM
+SUP-1032,Экспорт падает на больших отчётах,Defect,Done,Марат,05/Jul/26 09:25 PM,10/Jul/26 05:34 AM,06/Jul/26 01:54 PM,09/Jul/26 03:33 PM,,Payments,10/Jul/26 05:34 AM
+SUP-1033,Не работает поиск по артикулу,Defect,In Progress,,06/Jul/26 09:25 PM,,06/Jul/26 11:01 PM,,45,Sync,06/Jul/26 11:01 PM
+SUP-1034,Экспорт падает на больших отчётах,Defect,In Progress,Тимур,07/Jul/26 10:40 PM,,08/Jul/26 01:02 AM,,92,Reports,08/Jul/26 01:02 AM
+SUP-1035,Мобильное приложение вылетает на списке заказов,Defect,In Progress,Игорь,08/Jul/26 06:00 AM,,08/Jul/26 07:48 AM,09/Jul/26 12:40 AM,95,Mobile,09/Jul/26 12:40 AM
+SUP-1036,Ошибка 500 при открытии карточки клиента,Defect,Open,Марат,08/Jul/26 12:12 AM,,,,,Payments,08/Jul/26 12:12 AM
+SUP-1037,Не грузится отчёт по продажам,Defect,Testing,Тимур,07/Jul/26 11:25 PM,,08/Jul/26 05:57 AM,11/Jul/26 10:55 AM,85,Reports,11/Jul/26 10:55 AM
+SUP-1038,Не работает поиск по артикулу,Defect,To Do,,08/Jul/26 08:12 PM,,,,72,Mobile,08/Jul/26 08:12 PM
+SUP-1039,Долгая загрузка дашборда,Defect,Done,Марат,10/Jul/26 04:25 AM,10/Jul/26 04:35 PM,10/Jul/26 05:52 AM,10/Jul/26 10:33 AM,92,Payments,10/Jul/26 04:35 PM
+SUP-1040,Двойное списание при повторной отправке,Defect,In Progress,Игорь,09/Jul/26 08:00 PM,,10/Jul/26 08:18 PM,,85,Sync,10/Jul/26 08:18 PM
+SUP-1041,Не сохраняется черновик заявки,Defect,Testing,Тимур,10/Jul/26 05:12 AM,,10/Jul/26 07:16 AM,10/Jul/26 06:21 PM,92,Payments,10/Jul/26 06:21 PM
+SUP-1042,Кнопка «Провести» неактивна у кассира,Defect,Done,Марат,09/Jul/26 08:25 PM,10/Jul/26 11:09 PM,10/Jul/26 02:03 PM,10/Jul/26 02:11 PM,35,Reports,10/Jul/26 11:09 PM
+SUP-1043,Фильтр по датам сбрасывается,Defect,In Review,,10/Jul/26 09:12 PM,,12/Jul/26 08:33 AM,14/Jul/26 08:39 PM,60,Core,14/Jul/26 08:39 PM
+SUP-1044,Кнопка «Провести» неактивна у кассира,Defect,In Review,,11/Jul/26 02:25 AM,,12/Jul/26 03:30 AM,12/Jul/26 06:25 AM,92,Mobile,12/Jul/26 06:25 AM
+SUP-1045,Пропали скидки в акциях,Defect,In Progress,,11/Jul/26 04:12 AM,,12/Jul/26 05:21 AM,,72,Payments,12/Jul/26 05:21 AM
+SUP-1046,Не сохраняется черновик заявки,Defect,In Progress,,11/Jul/26 08:00 PM,,13/Jul/26 12:32 PM,29/Jul/26 01:22 PM,25,Payments,29/Jul/26 01:22 PM
+SUP-1047,Отчёт по марже расходится с 1С,Defect,Done,Тимур,13/Jul/26 12:00 AM,22/Jul/26 04:10 PM,15/Jul/26 03:55 PM,22/Jul/26 01:26 PM,65,Reports,22/Jul/26 04:10 PM
+SUP-1048,Не сходится остаток на складе,Defect,Done,Марат,13/Jul/26 12:12 AM,13/Jul/26 04:35 PM,13/Jul/26 08:40 AM,13/Jul/26 01:23 PM,92,Core,13/Jul/26 04:35 PM
+SUP-1049,Отчёт по марже расходится с 1С,Defect,Done,Марат,13/Jul/26 06:12 AM,17/Jul/26 12:55 AM,14/Jul/26 06:49 PM,16/Jul/26 07:11 PM,15,Mobile,17/Jul/26 12:55 AM
+SUP-1050,Не сохраняется черновик заявки,Defect,Done,Аня,13/Jul/26 12:00 AM,15/Jul/26 11:52 PM,13/Jul/26 01:28 AM,13/Jul/26 01:34 PM,92,Sync,15/Jul/26 11:52 PM
+SUP-1051,Кассовый чек печатается без НДС,Defect,In Progress,Марат,14/Jul/26 03:00 AM,,15/Jul/26 03:34 AM,23/Jul/26 05:16 PM,45,Core,23/Jul/26 05:16 PM
+SUP-1052,Отчёт по марже расходится с 1С,Defect,Done,Даша,14/Jul/26 10:25 PM,24/Jul/26 04:33 AM,15/Jul/26 04:06 AM,23/Jul/26 06:01 PM,55,Reports,24/Jul/26 04:33 AM
+SUP-1053,Не грузится отчёт по продажам,Defect,Testing,Тимур,15/Jul/26 08:40 PM,,16/Jul/26 07:27 AM,17/Jul/26 02:51 AM,85,Sync,17/Jul/26 02:51 AM
+SUP-1054,Пропали скидки в акциях,Defect,Done,Марат,16/Jul/26 02:00 AM,09/Aug/26 10:54 PM,18/Jul/26 03:56 AM,29/Jul/26 06:08 PM,35,Sync,09/Aug/26 10:54 PM
+SUP-1055,Не работает поиск по артикулу,Defect,Testing,Игорь,17/Jul/26 12:00 AM,,17/Jul/26 04:17 AM,26/Jul/26 04:16 AM,45,Sync,26/Jul/26 04:16 AM
+SUP-1056,Не сохраняется черновик заявки,Defect,Done,Аня,16/Jul/26 11:25 PM,24/Jul/26 02:00 AM,17/Jul/26 06:10 PM,19/Jul/26 08:59 AM,95,Reports,24/Jul/26 02:00 AM
+SUP-1057,Не приходит письмо о смене пароля,Defect,Done,Даша,16/Jul/26 08:40 PM,20/Jul/26 12:41 PM,18/Jul/26 10:50 AM,19/Jul/26 04:44 AM,65,Mobile,20/Jul/26 12:41 PM
+SUP-1058,Не сохраняется черновик заявки,Defect,Testing,,17/Jul/26 01:25 AM,,17/Jul/26 01:13 PM,24/Jul/26 06:18 AM,45,Mobile,24/Jul/26 06:18 AM
+SUP-1059,Слетают настройки прав после релиза,Defect,Done,Даша,17/Jul/26 10:12 PM,08/Aug/26 01:07 PM,18/Jul/26 07:31 AM,30/Jul/26 03:12 AM,15,Payments,08/Aug/26 01:07 PM
+SUP-1060,Не работает поиск по артикулу,Defect,Done,Даша,18/Jul/26 11:00 PM,23/Jul/26 06:30 PM,19/Jul/26 03:44 PM,20/Jul/26 03:12 AM,25,Mobile,23/Jul/26 06:30 PM
+SUP-1061,Кнопка «Провести» неактивна у кассира,Defect,Done,,19/Jul/26 04:12 AM,28/Jul/26 02:36 PM,19/Jul/26 04:48 PM,26/Jul/26 04:10 PM,60,Payments,28/Jul/26 02:36 PM
+SUP-1062,Оплата не проходит у трёх клиентов,Defect,Done,Даша,20/Jul/26 12:12 AM,23/Jul/26 08:20 PM,20/Jul/26 08:37 PM,23/Jul/26 07:27 PM,60,Mobile,23/Jul/26 08:20 PM
+SUP-1063,Импорт номенклатуры зависает на 5000 строк,Defect,Done,Аня,20/Jul/26 08:00 PM,09/Aug/26 11:38 PM,25/Jul/26 06:30 AM,07/Aug/26 10:30 AM,60,Payments,09/Aug/26 11:38 PM
+SUP-1064,Оплата не проходит у трёх клиентов,Defect,In Progress,Марат,21/Jul/26 04:00 AM,,21/Jul/26 11:14 AM,,92,Payments,21/Jul/26 11:14 AM
+SUP-1065,Дубли уведомлений после переезда очереди,Defect,Done,Марат,20/Jul/26 11:00 PM,31/Jul/26 04:32 PM,21/Jul/26 09:35 PM,29/Jul/26 06:48 AM,85,Sync,31/Jul/26 04:32 PM
+SUP-1066,Не сходится остаток на складе,Defect,To Do,Даша,21/Jul/26 04:12 AM,,,,60,Sync,21/Jul/26 04:12 AM
+SUP-1067,Не сходится остаток на складе,Defect,Open,Марат,22/Jul/26 06:12 AM,,,,65,Reports,22/Jul/26 06:12 AM
+SUP-1068,Мобильное приложение вылетает на списке заказов,Defect,Done,,21/Jul/26 11:40 PM,24/Jul/26 02:09 AM,22/Jul/26 06:25 PM,22/Jul/26 10:59 PM,85,Mobile,24/Jul/26 02:09 AM
+SUP-1069,Отчёт по марже расходится с 1С,Defect,In Progress,Аня,22/Jul/26 01:40 AM,,22/Jul/26 01:56 AM,,35,Sync,22/Jul/26 01:56 AM
+SUP-1070,Отчёт по марже расходится с 1С,Defect,To Do,Игорь,22/Jul/26 11:40 PM,,,,35,Payments,22/Jul/26 11:40 PM
+SUP-1071,Синхронизация с маркетплейсом встала,Defect,In Progress,Аня,22/Jul/26 11:40 PM,,27/Jul/26 12:09 AM,27/Jul/26 07:07 AM,60,Mobile,27/Jul/26 07:07 AM
+SUP-1072,Экспорт падает на больших отчётах,Defect,In Progress,Аня,23/Jul/26 08:12 PM,,24/Jul/26 08:05 PM,,60,Sync,24/Jul/26 08:05 PM
+SUP-1073,Экспорт падает на больших отчётах,Defect,Done,Тимур,24/Jul/26 10:40 PM,01/Aug/26 05:18 AM,25/Jul/26 01:36 PM,01/Aug/26 12:41 AM,,Reports,01/Aug/26 05:18 AM
+SUP-1074,Экспорт падает на больших отчётах,Defect,Testing,Марат,25/Jul/26 01:40 AM,,26/Jul/26 10:36 AM,02/Aug/26 01:15 PM,15,Mobile,02/Aug/26 01:15 PM
+SUP-1075,Двойное списание при повторной отправке,Defect,In Review,Марат,26/Jul/26 01:40 AM,,26/Jul/26 05:17 PM,02/Aug/26 09:42 AM,35,Mobile,02/Aug/26 09:42 AM
+SUP-1076,Синхронизация с маркетплейсом встала,Defect,In Progress,Тимур,25/Jul/26 08:40 PM,,28/Jul/26 01:43 PM,,15,Sync,28/Jul/26 01:43 PM
+SUP-1077,Экспорт падает на больших отчётах,Defect,Done,Марат,27/Jul/26 01:00 AM,05/Aug/26 04:28 PM,29/Jul/26 07:53 AM,04/Aug/26 04:15 AM,45,Payments,05/Aug/26 04:28 PM
+SUP-1078,Отчёт по марже расходится с 1С,Defect,Done,Аня,26/Jul/26 09:40 PM,31/Jul/26 03:06 AM,27/Jul/26 04:30 PM,29/Jul/26 11:54 PM,92,Reports,31/Jul/26 03:06 AM
+SUP-1079,Двойное списание при повторной отправке,Defect,Done,Аня,27/Jul/26 12:12 AM,01/Aug/26 08:23 PM,27/Jul/26 05:02 AM,31/Jul/26 03:42 PM,78,Payments,01/Aug/26 08:23 PM
+SUP-1080,Экспорт падает на больших отчётах,Defect,Done,Аня,27/Jul/26 09:00 PM,31/Jul/26 04:46 PM,29/Jul/26 05:10 AM,31/Jul/26 04:28 AM,65,Reports,31/Jul/26 04:46 PM
+SUP-1081,Не сохраняется черновик заявки,Defect,Done,,28/Jul/26 02:40 AM,29/Jul/26 02:16 PM,29/Jul/26 12:08 AM,29/Jul/26 03:34 AM,92,Reports,29/Jul/26 02:16 PM
+SUP-1082,Импорт номенклатуры зависает на 5000 строк,Defect,In Progress,Аня,28/Jul/26 12:25 AM,,29/Jul/26 09:53 AM,,45,Payments,29/Jul/26 09:53 AM
+SUP-1083,Импорт номенклатуры зависает на 5000 строк,Defect,Done,,27/Jul/26 11:12 PM,06/Aug/26 01:21 AM,31/Jul/26 01:25 PM,04/Aug/26 09:02 PM,45,Reports,06/Aug/26 01:21 AM
+SUP-1084,Импорт номенклатуры зависает на 5000 строк,Defect,Testing,Марат,28/Jul/26 08:00 PM,,29/Jul/26 09:45 PM,07/Aug/26 10:56 AM,,Reports,07/Aug/26 10:56 AM
+SUP-1085,Дубли уведомлений после переезда очереди,Defect,Done,,28/Jul/26 11:12 PM,13/Aug/26 03:39 PM,29/Jul/26 05:49 PM,08/Aug/26 07:07 PM,15,Core,13/Aug/26 03:39 PM
+SUP-1086,Оплата не проходит у трёх клиентов,Defect,Open,Игорь,29/Jul/26 05:25 AM,,,,35,Payments,29/Jul/26 05:25 AM
+SUP-1087,Отчёт по марже расходится с 1С,Defect,In Progress,Игорь,28/Jul/26 08:25 PM,,30/Jul/26 05:47 PM,,60,Mobile,30/Jul/26 05:47 PM
+SUP-1088,Не приходит письмо о смене пароля,Defect,In Progress,Даша,30/Jul/26 02:00 AM,,30/Jul/26 05:01 AM,,95,Sync,30/Jul/26 05:01 AM
+SUP-1089,Долгая загрузка дашборда,Defect,Done,,31/Jul/26 12:25 AM,10/Aug/26 07:41 AM,05/Aug/26 02:52 AM,06/Aug/26 11:49 PM,60,Payments,10/Aug/26 07:41 AM
+SUP-1090,Экспорт падает на больших отчётах,Defect,In Progress,Даша,31/Jul/26 02:40 AM,,04/Aug/26 08:33 PM,,35,Core,04/Aug/26 08:33 PM
+SUP-1091,Синхронизация с маркетплейсом встала,Defect,Done,Тимур,31/Jul/26 01:40 AM,31/Jul/26 06:43 AM,31/Jul/26 02:43 AM,31/Jul/26 03:00 AM,95,Core,31/Jul/26 06:43 AM
+SUP-1092,Отчёт по марже расходится с 1С,Defect,In Progress,Аня,30/Jul/26 10:12 PM,,31/Jul/26 11:31 AM,,55,Sync,31/Jul/26 11:31 AM
+SUP-1093,Не приходит письмо о смене пароля,Defect,Done,,31/Jul/26 08:40 PM,16/Aug/26 09:11 PM,31/Jul/26 10:51 PM,13/Aug/26 11:34 PM,55,Payments,16/Aug/26 09:11 PM
+SUP-1094,Двойное списание при повторной отправке,Defect,In Progress,Игорь,01/Aug/26 05:40 AM,,02/Aug/26 03:22 PM,,78,Payments,02/Aug/26 03:22 PM
+SUP-1095,Не сохраняется черновик заявки,Defect,In Progress,,02/Aug/26 01:00 AM,,02/Aug/26 12:21 PM,,25,Reports,02/Aug/26 12:21 PM
+SUP-1096,Импорт номенклатуры зависает на 5000 строк,Defect,Done,Даша,02/Aug/26 06:25 AM,06/Aug/26 05:54 PM,03/Aug/26 02:10 AM,06/Aug/26 03:10 AM,15,Mobile,06/Aug/26 05:54 PM
+SUP-1097,Слетают настройки прав после релиза,Defect,Open,Аня,02/Aug/26 06:25 AM,,,,65,Mobile,02/Aug/26 06:25 AM
+SUP-1098,Не работает поиск по артикулу,Defect,Open,Тимур,02/Aug/26 05:40 AM,,,,25,Reports,02/Aug/26 05:40 AM
+SUP-1099,Кнопка «Провести» неактивна у кассира,Defect,Done,Даша,03/Aug/26 04:00 AM,05/Aug/26 09:00 AM,04/Aug/26 08:28 PM,05/Aug/26 06:46 AM,,Payments,05/Aug/26 09:00 AM
+SUP-1100,Не приходит письмо о смене пароля,Defect,Done,,02/Aug/26 08:00 PM,12/Aug/26 08:21 PM,03/Aug/26 07:42 PM,07/Aug/26 02:49 PM,78,Payments,12/Aug/26 08:21 PM
+SUP-1101,Кнопка «Провести» неактивна у кассира,Defect,Done,Даша,02/Aug/26 09:25 PM,04/Aug/26 02:21 PM,03/Aug/26 10:49 PM,04/Aug/26 08:09 AM,78,Payments,04/Aug/26 02:21 PM
+SUP-1102,Двойное списание при повторной отправке,Defect,Open,Аня,03/Aug/26 05:25 AM,,,,78,Sync,03/Aug/26 05:25 AM
+SUP-1103,Не сохраняется черновик заявки,Defect,Done,Игорь,04/Aug/26 02:12 AM,08/Aug/26 12:08 AM,04/Aug/26 11:25 AM,04/Aug/26 01:37 PM,95,Core,08/Aug/26 12:08 AM
+SUP-1104,Долгая загрузка дашборда,Defect,Done,Тимур,03/Aug/26 09:25 PM,07/Aug/26 04:49 AM,04/Aug/26 03:18 PM,05/Aug/26 06:22 PM,72,Reports,07/Aug/26 04:49 AM
+SUP-1105,Мобильное приложение вылетает на списке заказов,Defect,In Review,,04/Aug/26 03:12 AM,,05/Aug/26 05:25 PM,21/Aug/26 01:46 PM,25,Reports,21/Aug/26 01:46 PM
+SUP-1106,Синхронизация с маркетплейсом встала,Defect,In Progress,,04/Aug/26 11:12 PM,,06/Aug/26 01:29 PM,09/Aug/26 09:24 AM,45,Reports,09/Aug/26 09:24 AM
+SUP-1107,Кассовый чек печатается без НДС,Defect,Done,Тимур,05/Aug/26 08:00 PM,07/Aug/26 09:32 PM,06/Aug/26 03:53 AM,06/Aug/26 09:57 AM,78,Core,07/Aug/26 09:32 PM
+SUP-1108,Фильтр по датам сбрасывается,Defect,In Progress,,06/Aug/26 10:12 PM,,11/Aug/26 12:31 PM,,,Sync,11/Aug/26 12:31 PM
+SUP-1109,Кнопка «Провести» неактивна у кассира,Defect,Done,,07/Aug/26 02:25 AM,17/Aug/26 07:55 AM,07/Aug/26 04:43 AM,15/Aug/26 07:05 PM,,Mobile,17/Aug/26 07:55 AM
+SUP-1110,Не грузится отчёт по продажам,Defect,In Progress,Игорь,06/Aug/26 11:12 PM,,07/Aug/26 12:59 AM,10/Aug/26 07:59 PM,,Core,10/Aug/26 07:59 PM
+SUP-1111,Кнопка «Провести» неактивна у кассира,Defect,Done,Тимур,07/Aug/26 06:12 AM,13/Aug/26 09:09 AM,08/Aug/26 03:31 AM,11/Aug/26 07:09 PM,25,Reports,13/Aug/26 09:09 AM
+SUP-1112,Слетают настройки прав после релиза,Defect,Open,Марат,08/Aug/26 06:00 AM,,,,92,Mobile,08/Aug/26 06:00 AM
+SUP-1113,Ошибка 500 при открытии карточки клиента,Defect,Done,,07/Aug/26 10:12 PM,18/Aug/26 08:45 AM,08/Aug/26 10:19 AM,13/Aug/26 02:16 PM,15,Reports,18/Aug/26 08:45 AM
+SUP-1114,Кнопка «Провести» неактивна у кассира,Defect,Done,Марат,08/Aug/26 12:40 AM,11/Aug/26 06:24 AM,09/Aug/26 04:37 AM,10/Aug/26 08:37 PM,85,Payments,11/Aug/26 06:24 AM
+SUP-1115,Не сохраняется черновик заявки,Defect,In Review,Даша,08/Aug/26 11:12 PM,,11/Aug/26 06:02 AM,13/Aug/26 05:32 AM,25,Mobile,13/Aug/26 05:32 AM
+SUP-1116,Пропали скидки в акциях,Defect,In Review,Марат,09/Aug/26 04:00 AM,,10/Aug/26 02:59 AM,16/Aug/26 01:44 PM,,Core,16/Aug/26 01:44 PM
+SUP-1117,Не грузится отчёт по продажам,Defect,In Progress,Марат,08/Aug/26 10:12 PM,,08/Aug/26 11:17 PM,09/Aug/26 12:49 PM,,Payments,09/Aug/26 12:49 PM
+SUP-1118,Двойное списание при повторной отправке,Defect,Done,Марат,09/Aug/26 09:00 PM,22/Aug/26 02:26 AM,13/Aug/26 02:39 AM,20/Aug/26 06:47 AM,15,Payments,22/Aug/26 02:26 AM
+SUP-1119,Не сходится остаток на складе,Defect,Done,Даша,10/Aug/26 11:00 PM,22/Aug/26 02:10 AM,11/Aug/26 12:24 AM,20/Aug/26 10:14 AM,,Reports,22/Aug/26 02:10 AM
+SUP-1120,Не сходится остаток на складе,Defect,Testing,Марат,10/Aug/26 10:00 PM,,11/Aug/26 06:29 AM,11/Aug/26 10:37 AM,95,Sync,11/Aug/26 10:37 AM
+SUP-1121,Оплата не проходит у трёх клиентов,Defect,Done,Игорь,12/Aug/26 05:40 AM,14/Aug/26 04:59 PM,13/Aug/26 08:11 PM,13/Aug/26 11:57 PM,45,Core,14/Aug/26 04:59 PM
+SUP-1122,Не сходится остаток на складе,Defect,Open,Марат,11/Aug/26 11:00 PM,,,,78,Reports,11/Aug/26 11:00 PM
+SUP-1123,Ошибка 500 при открытии карточки клиента,Defect,In Review,Игорь,12/Aug/26 01:40 AM,,13/Aug/26 04:43 AM,21/Aug/26 03:55 AM,15,Payments,21/Aug/26 03:55 AM
+SUP-1124,Дубли уведомлений после переезда очереди,Defect,Done,,12/Aug/26 11:12 PM,28/Aug/26 02:27 PM,13/Aug/26 06:27 AM,27/Aug/26 05:30 AM,65,Sync,28/Aug/26 02:27 PM
+SUP-1125,Не сходится остаток на складе,Defect,Done,Тимур,13/Aug/26 01:00 AM,29/Aug/26 08:01 AM,17/Aug/26 10:31 AM,28/Aug/26 01:25 PM,60,Mobile,29/Aug/26 08:01 AM
+SUP-1126,Синхронизация с маркетплейсом встала,Defect,In Progress,,13/Aug/26 04:12 AM,,19/Aug/26 09:49 PM,,60,Core,19/Aug/26 09:49 PM
+SUP-1127,Ошибка 500 при открытии карточки клиента,Defect,Testing,Игорь,14/Aug/26 01:25 AM,,14/Aug/26 04:27 AM,18/Aug/26 08:28 AM,72,Payments,18/Aug/26 08:28 AM
+SUP-1128,Фильтр по датам сбрасывается,Defect,Done,,15/Aug/26 01:40 AM,20/Aug/26 09:31 AM,16/Aug/26 04:37 PM,17/Aug/26 07:17 AM,85,Payments,20/Aug/26 09:31 AM
+SUP-1129,Дубли уведомлений после переезда очереди,Defect,In Progress,Аня,14/Aug/26 11:25 PM,,15/Aug/26 12:42 PM,,78,Reports,15/Aug/26 12:42 PM
+SUP-1130,Дубли уведомлений после переезда очереди,Defect,In Progress,Тимур,16/Aug/26 02:12 AM,,18/Aug/26 05:34 PM,,25,Payments,18/Aug/26 05:34 PM
+SUP-1131,Не грузится отчёт по продажам,Defect,Done,Аня,16/Aug/26 02:40 AM,26/Aug/26 08:23 AM,16/Aug/26 03:10 AM,25/Aug/26 06:20 PM,,Sync,26/Aug/26 08:23 AM
+SUP-1132,Пропали скидки в акциях,Defect,Done,Аня,16/Aug/26 08:12 PM,25/Aug/26 01:01 AM,18/Aug/26 08:30 PM,23/Aug/26 06:45 AM,60,Payments,25/Aug/26 01:01 AM
+SUP-1133,Не приходит письмо о смене пароля,Defect,Testing,Тимур,17/Aug/26 06:00 AM,,18/Aug/26 04:39 AM,19/Aug/26 04:45 PM,65,Mobile,19/Aug/26 04:45 PM
+SUP-1134,Мобильное приложение вылетает на списке заказов,Defect,In Review,Марат,17/Aug/26 03:40 AM,,18/Aug/26 06:32 PM,21/Aug/26 09:43 AM,,Mobile,21/Aug/26 09:43 AM
+SUP-1135,Дубли уведомлений после переезда очереди,Defect,Testing,Игорь,17/Aug/26 03:00 AM,,17/Aug/26 02:34 PM,18/Aug/26 08:03 PM,,Mobile,18/Aug/26 08:03 PM
+SUP-1136,Не приходит письмо о смене пароля,Defect,Done,Даша,18/Aug/26 03:00 AM,28/Aug/26 01:35 AM,19/Aug/26 07:18 AM,20/Aug/26 08:15 AM,85,Core,28/Aug/26 01:35 AM
+SUP-1137,Не работает поиск по артикулу,Defect,In Progress,Даша,17/Aug/26 09:25 PM,,17/Aug/26 10:27 PM,,85,Sync,17/Aug/26 10:27 PM
+SUP-1138,Импорт номенклатуры зависает на 5000 строк,Defect,In Progress,Даша,18/Aug/26 09:12 PM,,21/Aug/26 03:18 AM,,45,Mobile,21/Aug/26 03:18 AM
+SUP-1139,Не сохраняется черновик заявки,Defect,In Progress,,18/Aug/26 11:12 PM,,23/Aug/26 09:14 AM,,25,Payments,23/Aug/26 09:14 AM
+SUP-1140,Фильтр по датам сбрасывается,Defect,In Review,Даша,18/Aug/26 10:25 PM,,19/Aug/26 04:44 PM,23/Aug/26 12:58 PM,85,Sync,23/Aug/26 12:58 PM
+SUP-1141,Ошибка 500 при открытии карточки клиента,Defect,In Progress,Тимур,20/Aug/26 12:40 AM,,20/Aug/26 05:55 AM,,85,Payments,20/Aug/26 05:55 AM
+SUP-1142,Двойное списание при повторной отправке,Defect,Done,Марат,20/Aug/26 06:25 AM,28/Aug/26 01:19 PM,21/Aug/26 08:32 AM,24/Aug/26 03:40 AM,55,Reports,28/Aug/26 01:19 PM
+SUP-1143,Не сходится остаток на складе,Defect,In Progress,Тимур,20/Aug/26 10:25 PM,,21/Aug/26 02:08 PM,,85,Core,21/Aug/26 02:08 PM
+SUP-1144,Двойное списание при повторной отправке,Defect,In Progress,Игорь,20/Aug/26 09:12 PM,,21/Aug/26 05:24 AM,,35,Payments,21/Aug/26 05:24 AM
+SUP-1145,Экспорт падает на больших отчётах,Defect,Done,,21/Aug/26 05:00 AM,25/Aug/26 03:16 AM,22/Aug/26 10:44 PM,24/Aug/26 05:41 PM,85,Mobile,25/Aug/26 03:16 AM
+SUP-1146,Отчёт по марже расходится с 1С,Defect,In Review,Аня,22/Aug/26 04:00 AM,,23/Aug/26 01:43 AM,31/Aug/26 08:17 PM,45,Mobile,31/Aug/26 08:17 PM
+SUP-1147,Не работает поиск по артикулу,Defect,Done,,23/Aug/26 04:00 AM,30/Aug/26 04:01 AM,26/Aug/26 05:29 AM,29/Aug/26 09:13 AM,25,Reports,30/Aug/26 04:01 AM
+SUP-1148,Мобильное приложение вылетает на списке заказов,Defect,To Do,Марат,22/Aug/26 10:25 PM,,,,85,Core,22/Aug/26 10:25 PM
+SUP-1149,Долгая загрузка дашборда,Defect,In Progress,Тимур,24/Aug/26 03:12 AM,,24/Aug/26 12:47 PM,,,Mobile,24/Aug/26 12:47 PM
+SUP-1150,Двойное списание при повторной отправке,Defect,Testing,Тимур,24/Aug/26 04:12 AM,,25/Aug/26 03:03 AM,27/Aug/26 08:54 PM,45,Core,27/Aug/26 08:54 PM
+SUP-1151,Экспорт падает на больших отчётах,Defect,In Review,Марат,24/Aug/26 12:25 AM,,25/Aug/26 06:56 PM,02/Sep/26 03:19 PM,35,Mobile,02/Sep/26 03:19 PM
+SUP-1152,Кассовый чек печатается без НДС,Defect,Open,Даша,24/Aug/26 04:40 AM,,,,72,Core,24/Aug/26 04:40 AM
+SUP-1153,Слетают настройки прав после релиза,Defect,In Progress,,25/Aug/26 04:40 AM,,25/Aug/26 07:31 AM,27/Aug/26 08:00 PM,78,Payments,27/Aug/26 08:00 PM
+SUP-1154,Фильтр по датам сбрасывается,Defect,In Progress,Тимур,26/Aug/26 06:12 AM,,27/Aug/26 04:05 AM,,,Core,27/Aug/26 04:05 AM
+SUP-1155,Кнопка «Провести» неактивна у кассира,Defect,Done,Марат,27/Aug/26 12:12 AM,28/Aug/26 07:36 AM,27/Aug/26 01:35 AM,27/Aug/26 04:03 AM,60,Reports,28/Aug/26 07:36 AM
+SUP-1156,Не работает поиск по артикулу,Defect,Done,Игорь,27/Aug/26 02:40 AM,02/Sep/26 04:55 AM,27/Aug/26 05:27 AM,01/Sep/26 10:10 PM,65,Reports,02/Sep/26 04:55 AM
+SUP-1157,Не грузится отчёт по продажам,Defect,In Progress,,26/Aug/26 09:40 PM,,30/Aug/26 04:06 PM,,35,Reports,30/Aug/26 04:06 PM
+SUP-1158,Фильтр по датам сбрасывается,Defect,Testing,,27/Aug/26 11:00 PM,,29/Aug/26 12:34 AM,30/Aug/26 03:14 PM,25,Reports,30/Aug/26 03:14 PM
+SUP-1159,Оплата не проходит у трёх клиентов,Defect,In Progress,,29/Aug/26 06:40 AM,,31/Aug/26 02:57 AM,,65,Reports,31/Aug/26 02:57 AM
+SUP-1160,Двойное списание при повторной отправке,Defect,In Progress,Тимур,28/Aug/26 08:00 PM,,01/Sep/26 09:56 AM,,,Sync,01/Sep/26 09:56 AM
+SUP-1161,Дубли уведомлений после переезда очереди,Defect,Done,Тимур,29/Aug/26 05:12 AM,01/Sep/26 11:39 PM,30/Aug/26 06:45 PM,01/Sep/26 04:22 PM,65,Payments,01/Sep/26 11:39 PM
+SUP-1162,Синхронизация с маркетплейсом встала,Defect,In Progress,,30/Aug/26 03:40 AM,,30/Aug/26 12:55 PM,01/Sep/26 05:06 PM,95,Core,01/Sep/26 05:06 PM
+SUP-1163,Импорт номенклатуры зависает на 5000 строк,Defect,In Review,Даша,30/Aug/26 01:00 AM,,31/Aug/26 01:45 PM,02/Sep/26 10:02 AM,25,Sync,02/Sep/26 10:02 AM
+SUP-1164,Фильтр по датам сбрасывается,Defect,Done,Игорь,29/Aug/26 08:25 PM,31/Aug/26 07:02 PM,30/Aug/26 08:53 AM,31/Aug/26 05:25 AM,45,Payments,31/Aug/26 07:02 PM
+SUP-1165,Двойное списание при повторной отправке,Defect,In Progress,Аня,30/Aug/26 12:40 AM,,31/Aug/26 07:15 AM,,55,Payments,31/Aug/26 07:15 AM
+SUP-1166,Слетают настройки прав после релиза,Defect,Testing,Игорь,31/Aug/26 05:00 AM,,31/Aug/26 02:03 PM,03/Sep/26 08:35 AM,85,Reports,03/Sep/26 08:35 AM
+SUP-1167,Кнопка «Провести» неактивна у кассира,Defect,Done,Игорь,31/Aug/26 04:25 AM,01/Sep/26 05:25 AM,31/Aug/26 04:48 AM,31/Aug/26 01:56 PM,95,Payments,01/Sep/26 05:25 AM
+SUP-1168,Пропали скидки в акциях,Defect,In Progress,Игорь,30/Aug/26 11:12 PM,,31/Aug/26 03:04 AM,,35,Sync,31/Aug/26 03:04 AM
+SUP-1169,Дубли уведомлений после переезда очереди,Defect,In Progress,Тимур,01/Sep/26 04:12 AM,,01/Sep/26 06:01 AM,,35,Mobile,01/Sep/26 06:01 AM
+SUP-1170,Не грузится отчёт по продажам,Defect,In Progress,Марат,31/Aug/26 09:12 PM,,02/Sep/26 09:34 AM,,55,Reports,02/Sep/26 09:34 AM
+SUP-1171,Фильтр по датам сбрасывается,Defect,In Review,Тимур,31/Aug/26 11:40 PM,,01/Sep/26 02:44 PM,02/Sep/26 07:07 AM,78,Reports,02/Sep/26 07:07 AM
+SUP-1172,Слетают настройки прав после релиза,Defect,Open,Даша,01/Sep/26 01:12 AM,,,,25,Reports,01/Sep/26 01:12 AM
+SUP-1173,Кнопка «Провести» неактивна у кассира,Defect,To Do,Даша,01/Sep/26 09:00 PM,,,,45,Payments,01/Sep/26 09:00 PM
+SUP-1174,Не приходит письмо о смене пароля,Defect,Open,Марат,02/Sep/26 03:12 AM,,,,55,Sync,02/Sep/26 03:12 AM
+SUP-1175,Ошибка 500 при открытии карточки клиента,Defect,Open,Игорь,02/Sep/26 01:00 AM,,,,72,Mobile,02/Sep/26 01:00 AM
+SUP-1176,Дубли уведомлений после переезда очереди,Defect,Done,Даша,01/Sep/26 08:00 PM,03/Sep/26 11:16 AM,02/Sep/26 11:17 AM,02/Sep/26 11:59 AM,25,Sync,03/Sep/26 11:16 AM
+SUP-1177,Импорт номенклатуры зависает на 5000 строк,Defect,Open,Аня,03/Sep/26 12:40 AM,,,,15,Reports,03/Sep/26 12:40 AM
+SUP-1178,Синхронизация с маркетплейсом встала,Defect,In Progress,Тимур,03/Sep/26 03:12 AM,,03/Sep/26 03:25 AM,,95,Payments,03/Sep/26 03:25 AM
+SUP-1179,Мобильное приложение вылетает на списке заказов,Defect,Open,Тимур,03/Sep/26 03:00 AM,,,,60,Payments,03/Sep/26 03:00 AM
