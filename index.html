@@ -124,14 +124,14 @@
     </header>
     <div class="modal__body">
       <p class="hint">
-        В Jira: поиск по JQL → Export → <b>Export CSV (current fields)</b>.
-        Перетащите файл сюда, выберите кнопкой или вставьте содержимое текстом.
-        Повторная заливка обновляет инциденты, а не задваивает.
+        В Jira: поиск по JQL → Export → <b>Export CSV (current fields)</b> или <b>Export Excel</b>.
+        Подойдут CSV, XLSX и XLS. Перетащите файл сюда, выберите кнопкой или вставьте
+        содержимое текстом. Повторная заливка обновляет инциденты, а не задваивает.
       </p>
       <div class="filedrop" id="drop">
-        <span>Перетащите .csv сюда</span>
+        <span>Перетащите .csv, .xlsx или .xls сюда</span>
         <button class="btn btn--ghost btn--sm" id="btn-file">Выбрать файл</button>
-        <input type="file" id="file" accept=".csv,text/csv" hidden>
+        <input type="file" id="file" accept=".csv,.xlsx,.xlsm,.xls,text/csv,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" hidden>
       </div>
       <details>
         <summary>Вставить текстом</summary>
@@ -180,6 +180,7 @@
 
 <script src="js/store.js"></script>
 <script src="js/csv.js"></script>
+<script src="js/sheets.js"></script>
 <script src="js/metrics.js"></script>
 <script src="js/charts.js"></script>
 <script src="js/filesync.js"></script>

@@ -321,6 +321,19 @@
 
   function readFile(file) {
     const reader = new FileReader();
+    if (Sheets.isSpreadsheet(file.name)) {
+      reader.onload = async () => {
+        try {
+          const res = await Sheets.toCsv(reader.result);
+          analyze(res.csv);
+          if (res.sheets > 1) UI.toast(`Взят лист «${res.sheet}» — самый заполненный из ${res.sheets}`);
+        } catch (err) {
+          UI.toast(err.message || 'Не удалось прочитать таблицу', 'err');
+        }
+      };
+      reader.readAsArrayBuffer(file);
+      return;
+    }
     reader.onload = () => analyze(String(reader.result));
     reader.readAsText(file, 'utf-8');
   }

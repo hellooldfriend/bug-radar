@@ -68,6 +68,7 @@ const Store = (() => {
     'testing', 'qa', 'ready to test', 'ready for test', 'deploy', 'release',
     'в работе', 'в процессе', 'разработка', 'ревью', 'на ревью', 'на проверке',
     'тестирование', 'на тестировании', 'деплой', 'релиз', 'выкатка',
+    'проектирование', 'заблокирован', 'заблокирована', 'blocked', 'ready for prod', 'ready for production',
   ];
 
   const MONTHS_GEN = ['янв', 'фев', 'мар', 'апр', 'мая', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'];
@@ -177,7 +178,8 @@ const Store = (() => {
     const raw = String(input).trim();
     if (!raw) return null;
 
-    let m = raw.match(/^(\d{4})-(\d{2})-(\d{2})(?:[T ](\d{2}):(\d{2})(?::(\d{2}))?)?/);
+    // 2026-08-13 15:04 и 2026.08.13 15:04 — год впереди, разделитель любой
+    let m = raw.match(/^(\d{4})[-.](\d{2})[-.](\d{2})(?:[T ](\d{2}):(\d{2})(?::(\d{2}))?)?/);
     if (m) {
       if (/[Zz]|[+-]\d{2}:?\d{2}$/.test(raw)) {
         const d = new Date(raw);
@@ -209,6 +211,36 @@ const Store = (() => {
     return isNaN(d) ? null : d.toISOString();
   }
   const fullYear = y => (y < 100 ? 2000 + y : y);
+
+  /**
+   * Длительность из текста: «2 ч 15 мин», «1d 4h 30m», «3 дн», «02:15».
+   * Возвращает миллисекунды или null. Голое число не трогаем: единицу
+   * измерения угадывать нельзя — в одной команде это часы, в другой минуты.
+   */
+  const DUR_UNITS = [
+    [/^(д|дн|дня|дней|день|d|day|days)$/, 24 * 3600e3],
+    [/^(ч|час|часа|часов|h|hr|hour|hours)$/, 3600e3],
+    [/^(м|мин|минут|минуты|минута|m|min|mins|minute|minutes)$/, 60e3],
+    [/^(с|сек|секунд|секунды|s|sec|second|seconds)$/, 1e3],
+  ];
+  function parseDuration(input) {
+    if (!input) return null;
+    const raw = String(input).trim().toLowerCase();
+    if (!raw) return null;
+    let m = raw.match(/^(\d{1,3}):(\d{2})(?::(\d{2}))?$/);
+    if (m) return (+m[1] * 3600 + +m[2] * 60 + +(m[3] || 0)) * 1e3;
+    const re = /(\d+(?:[.,]\d+)?)\s*([a-zа-я]+)\.?/g;
+    let total = 0, found = false, rest = raw;
+    while ((m = re.exec(raw))) {
+      const unit = DUR_UNITS.find(([r]) => r.test(m[2]));
+      if (!unit) return null;                     // незнакомая единица — это не длительность
+      total += parseFloat(m[1].replace(',', '.')) * unit[1];
+      found = true;
+      rest = rest.replace(m[0], '');
+    }
+    if (!found || rest.replace(/[\s,;и]+/g, '')) return null;
+    return total;
+  }
 
   function monthIndex(name) {
     const n = String(name).toLowerCase().slice(0, 3);
@@ -349,6 +381,8 @@ const Store = (() => {
       components: Array.isArray(raw.components) ? raw.components.filter(Boolean)
         : norm(raw.components) ? norm(raw.components).split(/\s*[;,]\s*/).filter(Boolean) : [],
       customer: norm(raw.customer),
+      labels: Array.isArray(raw.labels) ? raw.labels.filter(Boolean)
+        : norm(raw.labels) ? norm(raw.labels).split(/\s*[;,]\s*|\s+/).filter(Boolean) : [],
       rank: rankValue(raw.rank),
       createdAt: parseDateTime(raw.created),
       startedAt: parseDateTime(raw.started),
@@ -360,9 +394,16 @@ const Store = (() => {
     inc.statusCategory = isDoneStatus(inc.status) ? 'done'
       : isProgressStatus(inc.status) ? 'indeterminate' : 'new';
 
-    // Задача закрыта, а даты закрытия в выгрузке нет: берём updated и честно это помечаем.
-    if (!inc.resolvedAt && inc.statusCategory === 'done' && inc.updatedAt) {
-      inc.resolvedAt = inc.updatedAt;
+    // «Время восстановления» бывает длительностью, а не датой: считаем от создания
+    if (!inc.fixedAt && inc.createdAt) {
+      const dur = parseDuration(raw.fixed);
+      if (dur !== null) inc.fixedAt = new Date(new Date(inc.createdAt).getTime() + dur).toISOString();
+    }
+
+    // Задача закрыта, а даты закрытия в выгрузке нет: сначала дата исправления,
+    // потом updated — и в обоих случаях честно это помечаем.
+    if (!inc.resolvedAt && inc.statusCategory === 'done' && (inc.fixedAt || inc.updatedAt)) {
+      inc.resolvedAt = inc.fixedAt || inc.updatedAt;
       inc.resolvedInferred = true;
     }
     // Статус «в работе» без даты старта: точного времени нет, метрика TTS его не получит.
@@ -495,7 +536,7 @@ const Store = (() => {
     KEY, HOUR, DAY, DEFAULT_SETTINGS, DEFAULT_BANDS, PERIOD_MODES, MONTHS_GEN,
     load, save, reset, getState, settings, incidents, updateSettings,
     onChange, parseImport, replaceState, serialize,
-    parseDateTime, startOfDay, endOfDay, addDays, startOfWeek, toISODate, parseISODate,
+    parseDateTime, parseDuration, startOfDay, endOfDay, addDays, startOfWeek, toISODate, parseISODate,
     fmtDay, fmtDayYear, fmtDuration, round1,
     periodRange, previousRange, seriesRanges, periodLabel,
     normalize, decorate, mergeIncidents, ageOf, bandOf, slaOf, isOverdue, isAtRisk,

@@ -11,7 +11,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const ROOT = path.join(__dirname, '..', '..');
-const SOURCES = ['js/store.js', 'js/csv.js', 'js/metrics.js', 'js/charts.js'];
+const SOURCES = ['js/store.js', 'js/csv.js', 'js/sheets.js', 'js/metrics.js', 'js/charts.js'];
 
 function memoryStorage() {
   const data = new Map();
@@ -27,7 +27,7 @@ function buildFactorySource() {
   if (factorySource) return factorySource;
   const parts = SOURCES.map(file => `// ── ${file}\n` + fs.readFileSync(path.join(ROOT, file), 'utf8'));
   factorySource = '(function (localStorage) {\n' + parts.join('\n') +
-    '\nreturn { Store, Csv, Metrics, Charts };\n})';
+    '\nreturn { Store, Csv, Sheets, Metrics, Charts };\n})';
   return factorySource;
 }
 
